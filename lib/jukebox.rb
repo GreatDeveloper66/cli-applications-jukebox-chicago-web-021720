@@ -16,7 +16,7 @@ end
 def play(song_array)
   puts "Please enter a song name or number:"
   song_index = gets.strip
-  song_name = song_array[song_name]
+  song_name = song_array[song_index]
   puts "Playing #{song}"
   puts "Invalid input, please try again"
 end
