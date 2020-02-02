@@ -39,16 +39,16 @@ def run(song_array)
     puts "Please enter a command:"
     response = gets.strip
     case response
-    when "help"
-      help()
-    when "list"
-      list(song_array)
-    when "play"
-      play(song_array)
-    when "exit"
-      exit_jukebox()
-    else
-      "Please enter valid command"
+      when "help"
+        help()
+      when "list"
+        list(song_array)
+      when "play"
+        play(song_array)
+      when "exit"
+        exit_jukebox()
+      else
+        "Please enter valid command"
     end
   end
 end
