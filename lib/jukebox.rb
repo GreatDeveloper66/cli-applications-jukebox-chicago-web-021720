@@ -22,10 +22,19 @@ def play(song_array)
   else
     song_name = song_array.find do |song| song == song_index end
   end
-  
+
   if song_name
     puts "Playing #{song_name}"
   else
     puts "Invalid input, please try again"
   end
+end
+
+def exit_jukebox
+  puts "Goodbye"
+end
+
+def run
+  puts "Please enter a command:"
+  
 end
