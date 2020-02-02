@@ -6,3 +6,9 @@ def help
   puts "- play : lets you choose a song to play"
   puts "- exit : exits the program"
 end
+
+def list(song_array)
+  song_array.each_with_index do |song, index|
+    puts "#{index}. #{song} "
+  end
+end
