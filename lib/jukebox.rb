@@ -35,9 +35,9 @@ def exit_jukebox
 end
 
 def run
-  puts "Please enter a command:"
-  response = gets.strip
   until response == "exit"
+    puts "Please enter a command:"
+    response = gets.strip
   end
   exit_jukebox
 
