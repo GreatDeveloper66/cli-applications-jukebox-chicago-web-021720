@@ -34,15 +34,21 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run
+def run(song_array)
   until response == "exit"
     puts "Please enter a command:"
     response = gets.strip
     case response
     when "help"
+      help()
     when "list"
+      list(song_array)
     when "play"
+      play(song_array)
+    when "exit"
+      exit_jukebox()
+    else
+      
+    end
   end
-  exit_jukebox
-
 end
