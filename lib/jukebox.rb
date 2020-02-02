@@ -48,7 +48,7 @@ def run(song_array)
     when "exit"
       exit_jukebox()
     else
-      
+      "Please enter valid command"
     end
   end
 end
