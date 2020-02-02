@@ -36,5 +36,5 @@ end
 
 def run
   puts "Please enter a command:"
-  
+
 end
