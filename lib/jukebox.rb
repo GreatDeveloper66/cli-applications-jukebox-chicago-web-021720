@@ -15,8 +15,14 @@ end
 
 def play(song_array)
   puts "Please enter a song name or number:"
+  songslength = song_array.length()
   song_index = gets.strip
-  song_name = song_array[song_index]
+  if (song_index < songlength && song_index > 0)
+    song_name = song_array[song_index]
+  else
+    song_name = song_array.find do |song| song == song_index end
+  end
+  
   if song_name
     puts "Playing #{song_name}"
   else
