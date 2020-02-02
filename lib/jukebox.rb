@@ -38,6 +38,10 @@ def run
   until response == "exit"
     puts "Please enter a command:"
     response = gets.strip
+    case response
+    when "help"
+    when "list"
+    when "play"
   end
   exit_jukebox
 
