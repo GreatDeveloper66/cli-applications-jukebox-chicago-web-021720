@@ -12,3 +12,11 @@ def list(song_array)
     puts "#{index + 1}. #{song}"
   end
 end
+
+def play(song_array)
+  puts "Please enter a song name or number:"
+  song = gets.strip
+
+  puts "Playing #{song}"
+  puts "Invalid input, please try again"
+end
